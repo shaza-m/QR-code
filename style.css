@@ -1,66 +1,61 @@
-body
-{
-   background-color:hsl(212, 45%, 89%);
-   font-family: "Outfit", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   font-style: normal; 
+@import url('https://fonts.google.com/specimen/Outfit');
+
+*{
+    box-sizing: border-box; /* Recommended HTML reset section */
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /*fixes font*/
 }
 
-#container
-{
-    width:1440px;
-    margin-left:auto;
-    margin-right:auto;
+img, picture, video, canvas, svg {  /*stops media from overflowing*/
+  display: block;
+  max-width: 100%;
+} 
+
+p, h1, h2, h3, h4, h5, h6 { /* enables hard wrapping in text*/
+  overflow-wrap: break-word;
 }
 
-#code
-{
-    background-color:hsl(0, 0%, 100%);
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
- 
-    border-radius: 20px;
-    width:320px;
-    height:499px;
-    margin-top:30%
-    
-
+body{
+  font-family: "Outfit",sans-serif;
+  background-color: #D5E1EF;
 }
 
-#qr > img
-{
-    height:288px;
-    width:288px;
-    margin:16px;
-    border-radius:10px;
-    
+#container{
+  min-width:20rem;
+  min-height:31.1875rem;
+  margin-top:14.40625rem;
 }
 
-#text
-{
-    color:hsl(216, 15%, 48%);
-    text-align:center;
-    width:288px;
-    height:131px;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 15px;
-    line-height:1.4;
-    letter-spacing:0.2px;
-    margin-top:8px;
-
+.text1{
+  font-size: 1.375rem;
+  letter-spacing: 0;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: #1F314F;
 }
 
-h2
-{
-    color:hsl(218, 44%, 22%);
-    font-size:22px;
-    line-height:1.2;
-    letter-spacing:0px;
-    margin-top: 0px;
+.text2{
+  font-size: 0.9375rem;
+  letter-spacing:0.0125rem;
+  line-height: 1.4em;
+  color: #68778D;
+  margin-bottom:1.5rem;
 }
 
+.box{
+  height:31.1875rem;
+  width:20rem;
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+  margin: auto;
+  text-align:center;
+  padding: 1rem;
+}
 
-
+.box > img{
+  width:18rem;
+  height:18rem;
+  border-radius:0.625rem;
+  margin-bottom:1.5rem;
+}
