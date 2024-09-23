@@ -1,1 +1,1 @@
-testing readme option
+This is second version of my QR code with little tweaks.
